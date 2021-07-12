@@ -7,7 +7,7 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-
+import "./shopify.js";
 export default {
   name: "App",
   components: {
