@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <UserCreneau class="creneaux-mbt"></UserCreneau>
+    <div class="creneaux-mbt">
+      <admin-creneau></admin-creneau>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import "./shopify.js";
+import AdminCreneau from "./App/AdminCreneau.vue";
+//import UserCreneau from "./App/UserCreneau.vue";
+//import "./shopify.js";
+
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    UserCreneau: () => import("./App/UserCreneau.vue"),
+    AdminCreneau,
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
