@@ -5,11 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
+    "appCreneauDev": "vue-cli-service build --mode development --dest public --target lib --name appCreneau './src/main.js'",
+    "appCreneauProd": "vue-cli-service build --mode production --dest public --target lib --name appCreneau './src/main.js'",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@shopify/app-bridge": "^2.0.3",
     "core-js": "^3.6.5",
+    "query-string": "^4.3.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {

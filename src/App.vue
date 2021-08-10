@@ -7,7 +7,12 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import "./shopify.js";
+import InitShopifyAppBridge from "./shopify.js";
+const Sp = new InitShopifyAppBridge(
+  "38aab48d0208f4ccd19aabbc413a2f18",
+  "https://habeuk.online/app/creneaux/shopify/valid-permissions-v2"
+);
+Sp.run();
 export default {
   name: "App",
   components: {
