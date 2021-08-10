@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@shopify/app-bridge": "^2.0.3",
+    "@shopify/app-bridge-utils": "^2.0.3",
     "core-js": "^3.6.5",
     "query-string": "^4.3.4",
+    "shopify-token": "^4.0.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {
