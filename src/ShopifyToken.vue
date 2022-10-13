@@ -1,22 +1,19 @@
 <template>
   <div class="loading">
     <h4>{{ title }}</h4>
-    <svgLoader></svgLoader>
+    <svgLoader v-if="waiting"></svgLoader>
+    <TestRequestshopify :shop="query.shop"></TestRequestshopify>
   </div>
 </template>
 <script>
 import AppBridge from "@shopify/app-bridge";
 import queryString from "query-string";
 import { Redirect } from "@shopify/app-bridge/actions";
-import { getSessionToken } from "@shopify/app-bridge-utils";
+
 //var ShopifyToken;
 export default {
   name: "ShopifyToken",
   props: {
-    sharedSecret: {
-      type: String,
-      default: "38aab48d0208f4ccd19aabbc413a2f18",
-    },
     apiKey: {
       type: String,
       default: "38aab48d0208f4ccd19aabbc413a2f18",
@@ -33,13 +30,14 @@ export default {
   },
   components: {
     svgLoader: () => import("./components/svgLoader.vue"),
+    TestRequestshopify: () => import("./components/TestRequestshopify.vue"),
   },
   data() {
     return {
       query: queryString.parse(window.location.search),
       permissionUrl: "",
       title: "Chargement",
-      sessionToken: null,
+      waiting: false,
     };
   },
   mounted() {
@@ -60,6 +58,7 @@ export default {
   },
   methods: {
     async init() {
+      this.waiting = true;
       var check;
       // si cest deux paramettres sont presents, alors cest l'initialisation de l'app,
       if (!this.query.code && !this.query.host) {
@@ -90,13 +89,12 @@ export default {
         Redirect.create(app).dispatch(Redirect.Action.REMOTE, "/");
       } else {
         this.title = "L'application est prete à etre utiliser";
-        const app = new AppBridge({
+        this.waiting = false;
+        window.app = new AppBridge({
           apiKey: this.apiKey,
           host: this.query.host,
           shopOrigin: this.query.shop,
         });
-        this.sessionToken = await getSessionToken(app);
-        this.$emeit("ev_sessionToken", this.sessionToken);
       }
     },
   },

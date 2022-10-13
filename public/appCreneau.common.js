@@ -255,27 +255,6 @@ module.exports = JSON.parse("{\"name\":\"@shopify/app-bridge\",\"version\":\"2.0
 
 /***/ }),
 
-/***/ "066b":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(__webpack_require__("478e"), exports);
-
-
-/***/ }),
-
 /***/ "06cf":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -515,28 +494,6 @@ function handleAppPrint() {
     }
 }
 exports.handleAppPrint = handleAppPrint;
-
-
-/***/ }),
-
-/***/ "1725":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(__webpack_require__("a248"), exports);
-__exportStar(__webpack_require__("9956"), exports);
 
 
 /***/ }),
@@ -802,94 +759,6 @@ var hiddenKeys = enumBugKeys.concat('length', 'prototype');
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
   return internalObjectKeys(O, hiddenKeys);
 };
-
-
-/***/ }),
-
-/***/ "24e7":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getSessionToken = void 0;
-var SessionToken = __importStar(__webpack_require__("54df"));
-var Error_1 = __webpack_require__("8aa1");
-function getSessionToken(appBridge) {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            return [2 /*return*/, new Promise(function (resolve, reject) {
-                    var unsubscribe = appBridge.subscribe(SessionToken.Action.RESPOND, function (_a) {
-                        var sessionToken = _a.sessionToken;
-                        if (sessionToken) {
-                            resolve(sessionToken);
-                        }
-                        else {
-                            reject(Error_1.fromAction('Failed to retrieve a session token', Error_1.Action.FAILED_AUTHENTICATION));
-                        }
-                        unsubscribe();
-                    });
-                    appBridge.dispatch(SessionToken.request());
-                })];
-        });
-    });
-}
-exports.getSessionToken = getSessionToken;
 
 
 /***/ }),
@@ -2249,30 +2118,6 @@ function create(app, options) {
     return new Button(app, options);
 }
 exports.create = create;
-
-
-/***/ }),
-
-/***/ "478e":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(__webpack_require__("abd5"), exports);
-__exportStar(__webpack_require__("743a"), exports);
-__exportStar(__webpack_require__("87c9"), exports);
-__exportStar(__webpack_require__("1725"), exports);
 
 
 /***/ }),
@@ -4228,33 +4073,6 @@ exports.isAppMessage = isAppMessage;
 
 /***/ }),
 
-/***/ "743a":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.isShopifyPing = exports.isShopifyPOS = exports.isShopifyMobile = exports.isMobile = void 0;
-function isMobile() {
-    return isShopifyMobile() || isShopifyPOS() || isShopifyPing();
-}
-exports.isMobile = isMobile;
-function isShopifyMobile() {
-    return typeof navigator !== 'undefined' && navigator.userAgent.indexOf('Shopify Mobile') >= 0;
-}
-exports.isShopifyMobile = isShopifyMobile;
-function isShopifyPOS() {
-    return typeof navigator !== 'undefined' && navigator.userAgent.indexOf('Shopify POS') >= 0;
-}
-exports.isShopifyPOS = isShopifyPOS;
-function isShopifyPing() {
-    return typeof navigator !== 'undefined' && navigator.userAgent.indexOf('Shopify Ping') >= 0;
-}
-exports.isShopifyPing = isShopifyPing;
-
-
-/***/ }),
-
 /***/ "7530":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5095,28 +4913,6 @@ exports.Performance = Performance;
 var validator_1 = __webpack_require__("741c");
 Object.defineProperty(exports, "isAppBridgeAction", { enumerable: true, get: function () { return validator_1.isAppBridgeAction; } });
 __exportStar(__webpack_require__("bdf4"), exports);
-
-
-/***/ }),
-
-/***/ "87c9":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(__webpack_require__("24e7"), exports);
-__exportStar(__webpack_require__("adf4"), exports);
 
 
 /***/ }),
@@ -6720,91 +6516,6 @@ exports.create = create;
 
 /***/ }),
 
-/***/ "9956":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.userAuthorizedFetch = void 0;
-var authorization_code_1 = __webpack_require__("a248");
-var DEFAULT_CALLBACK_URI = 'auth/shopify/callback';
-function needsAuthorizationCode(response) {
-    var headerValue = response.headers.get('X-Shopify-API-Request-Failure-Unauthorized');
-    if (headerValue) {
-        return headerValue.toLowerCase() === 'true';
-    }
-    return false;
-}
-function userAuthorizedFetch(_a) {
-    var _this = this;
-    var app = _a.app, _b = _a.callbackUri, callbackUri = _b === void 0 ? DEFAULT_CALLBACK_URI : _b, _c = _a.isAuthorizationCodeRequired, isAuthorizationCodeRequired = _c === void 0 ? needsAuthorizationCode : _c, fetchOperation = _a.fetchOperation;
-    return function (uri, options) { return __awaiter(_this, void 0, void 0, function () {
-        var response, _a, code, hmac, shop, timestamp, formattedCallbackUri, callbackResponse;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
-                case 0: return [4 /*yield*/, fetchOperation(uri, options)];
-                case 1:
-                    response = _b.sent();
-                    if (!isAuthorizationCodeRequired(response)) {
-                        return [2 /*return*/, response];
-                    }
-                    return [4 /*yield*/, authorization_code_1.getAuthorizationCodePayload(app)];
-                case 2:
-                    _a = _b.sent(), code = _a.code, hmac = _a.hmac, shop = _a.shop, timestamp = _a.timestamp;
-                    formattedCallbackUri = encodeURI("https://" + window.location.hostname + "/" + callbackUri + "?code=" + code + "&hmac=" + hmac + "&shop=" + shop + "&timestamp=" + timestamp);
-                    return [4 /*yield*/, fetchOperation(formattedCallbackUri, {})];
-                case 3:
-                    callbackResponse = _b.sent();
-                    if (!callbackResponse.ok) {
-                        throw new Error('Failed to authorize request.');
-                    }
-                    return [2 /*return*/, fetchOperation(uri, options)];
-            }
-        });
-    }); };
-}
-exports.userAuthorizedFetch = userAuthorizedFetch;
-
-
-/***/ }),
-
 /***/ "997d":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7531,99 +7242,6 @@ exports.create = create;
 
 /***/ }),
 
-/***/ "a248":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getAuthorizationCodePayload = void 0;
-var AuthCode = __importStar(__webpack_require__("c029"));
-var Error_1 = __webpack_require__("8aa1");
-var uuid_1 = __importDefault(__webpack_require__("b85f"));
-function getAuthorizationCodePayload(app) {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            return [2 /*return*/, new Promise(function (resolve, reject) {
-                    var requestId = uuid_1.default();
-                    var unsubscribe = app.subscribe(AuthCode.Action.RESPOND, function (payload) {
-                        switch (payload === null || payload === void 0 ? void 0 : payload.status) {
-                            case 'needsExchange':
-                                resolve(payload);
-                                break;
-                            default:
-                                reject(Error_1.fromAction('Failed to retrieve an authorization code', Error_1.Action.FAILED_AUTHENTICATION));
-                        }
-                        unsubscribe();
-                    }, requestId);
-                    app.dispatch(AuthCode.request(requestId));
-                })];
-        });
-    });
-}
-exports.getAuthorizationCodePayload = getAuthorizationCodePayload;
-
-
-/***/ }),
-
 /***/ "a3df":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7671,166 +7289,6 @@ module.exports = function (argument) {
 
 /***/ }),
 
-/***/ "abd5":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createMutationObserver = exports.setupModalAutoSizing = void 0;
-var Modal_1 = __webpack_require__("715f");
-var MessageTransport_1 = __webpack_require__("c65b");
-var platform_1 = __webpack_require__("743a");
-var AUTO_SIZE_CLASS = 'app-bridge-utils-modal-auto-size';
-var autoSizeStylesheet = createAutoSizeStylesheet();
-function createAutoSizeStylesheet() {
-    if (typeof document === 'undefined') {
-        return null;
-    }
-    var autoSizeStylesheet = document.createElement('style');
-    autoSizeStylesheet.type = 'text/css';
-    autoSizeStylesheet.innerHTML = "." + AUTO_SIZE_CLASS + " { overflow: hidden; height: auto; min-height: auto; }";
-    return autoSizeStylesheet;
-}
-function addAutoSizing(app, id) {
-    if (!autoSizeStylesheet) {
-        return function () { };
-    }
-    var head = document.getElementsByTagName('head')[0];
-    var classList = document.body.classList;
-    head.appendChild(autoSizeStylesheet);
-    classList.add(AUTO_SIZE_CLASS);
-    var mutationObserver = createMutationObserver(app, id);
-    return function () {
-        classList.remove(AUTO_SIZE_CLASS);
-        if (head.contains(autoSizeStylesheet)) {
-            head.removeChild(autoSizeStylesheet);
-        }
-        if (mutationObserver) {
-            mutationObserver.disconnect();
-        }
-    };
-}
-/**
- * Automatically track changes to the document.body height and dispatch and action to update the modal size
- * @remarks This utility should only be used for an app that is meant to open inside a Modal
- * @param app App Bridge client application instance
- * @returns function to remove the auto-size tracker for the document.body
- *
- * @public
- */
-function setupModalAutoSizing(app) {
-    return __awaiter(this, void 0, void 0, function () {
-        function cleanup() {
-            if (removeAutoSizing) {
-                removeAutoSizing();
-                removeAutoSizing = undefined;
-            }
-        }
-        function handleModalSizeUpdate(appState) {
-            var context = appState.context, id = appState.modal.id;
-            if (platform_1.isMobile() || context !== MessageTransport_1.Context.Modal) {
-                cleanup();
-                return cleanup;
-            }
-            if (!removeAutoSizing) {
-                removeAutoSizing = addAutoSizing(app, id);
-            }
-            return cleanup;
-        }
-        var removeAutoSizing;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, app.getState().then(handleModalSizeUpdate)];
-                case 1:
-                    _a.sent();
-                    return [2 /*return*/, cleanup];
-            }
-        });
-    });
-}
-exports.setupModalAutoSizing = setupModalAutoSizing;
-/**
- * Sets up modal auto sizing, using a MutationObserver.
- *
- * @param app App Bridge client application instance
- * @param id Currently active modal instance ID
- *
- * @internal
- */
-function createMutationObserver(app, id) {
-    if (typeof document === 'undefined') {
-        return;
-    }
-    var lastKnownWindowHeight = -1;
-    var mutationTimeoutId;
-    var mutationObserverConfig = {
-        attributes: true,
-        attributeOldValue: false,
-        characterData: true,
-        characterDataOldValue: false,
-        childList: true,
-        subtree: true,
-    };
-    var mutationObserver = new MutationObserver(debouncedResizeHandler);
-    mutationObserver.observe(document, mutationObserverConfig);
-    updateHeight();
-    function debouncedResizeHandler() {
-        if (mutationTimeoutId) {
-            window.clearTimeout(mutationTimeoutId);
-        }
-        mutationTimeoutId = window.setTimeout(updateHeight, 16);
-    }
-    function updateHeight() {
-        var height = document.body.scrollHeight;
-        if (height !== lastKnownWindowHeight) {
-            lastKnownWindowHeight = height;
-            app.dispatch(Modal_1.updateModalSize({ id: id, height: String(height) }));
-        }
-    }
-    return mutationObserver;
-}
-exports.createMutationObserver = createMutationObserver;
-
-
-/***/ }),
-
 /***/ "ac1f":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7868,80 +7326,6 @@ module.exports = function () {
   if (that.sticky) result += 'y';
   return result;
 };
-
-
-/***/ }),
-
-/***/ "adf4":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.authenticatedFetch = void 0;
-var merge_1 = __importDefault(__webpack_require__("dca6"));
-var session_token_1 = __webpack_require__("24e7");
-function authenticatedFetch(app, fetchOperation) {
-    var _this = this;
-    if (fetchOperation === void 0) { fetchOperation = fetch; }
-    return function (uri, options) { return __awaiter(_this, void 0, void 0, function () {
-        var sessionToken, optionsWithToken;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, session_token_1.getSessionToken(app)];
-                case 1:
-                    sessionToken = _a.sent();
-                    optionsWithToken = merge_1.default(options ? options : {}, {
-                        headers: {
-                            Authorization: "Bearer " + sessionToken,
-                            'X-Requested-With': 'XMLHttpRequest',
-                        },
-                    });
-                    return [2 /*return*/, fetchOperation(uri, optionsWithToken)];
-            }
-        });
-    }); };
-}
-exports.authenticatedFetch = authenticatedFetch;
 
 
 /***/ }),
@@ -10879,12 +10263,12 @@ if (typeof window !== 'undefined') {
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"452ea71f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ShopifyToken.vue?vue&type=template&id=45445f3d&
-var ShopifyTokenvue_type_template_id_45445f3d_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"loading"},[_c('h4',[_vm._v(_vm._s(_vm.title))]),_c('svgLoader')],1)}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"40e88119-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ShopifyToken.vue?vue&type=template&id=6ba8ffc3&
+var ShopifyTokenvue_type_template_id_6ba8ffc3_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"loading"},[_c('h4',[_vm._v(_vm._s(_vm.title))]),(_vm.waiting)?_c('svgLoader'):_vm._e(),_c('TestRequestshopify',{attrs:{"shop":_vm.query.shop}})],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/ShopifyToken.vue?vue&type=template&id=45445f3d&
+// CONCATENATED MODULE: ./src/ShopifyToken.vue?vue&type=template&id=6ba8ffc3&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
 var es_object_to_string = __webpack_require__("d3b7");
@@ -10934,6 +10318,9 @@ function _asyncToGenerator(fn) {
 // EXTERNAL MODULE: ./node_modules/regenerator-runtime/runtime.js
 var runtime = __webpack_require__("96cf");
 
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.iterator.js
+var es_array_iterator = __webpack_require__("e260");
+
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.iterator.js
 var es_string_iterator = __webpack_require__("3ca3");
 
@@ -10957,9 +10344,6 @@ var query_string_default = /*#__PURE__*/__webpack_require__.n(query_string);
 // EXTERNAL MODULE: ./node_modules/@shopify/app-bridge/actions/index.js
 var actions = __webpack_require__("86b8");
 
-// EXTERNAL MODULE: ./node_modules/@shopify/app-bridge-utils/index.js
-var app_bridge_utils = __webpack_require__("066b");
-
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ShopifyToken.vue?vue&type=script&lang=js&
 
 
@@ -10968,13 +10352,15 @@ var app_bridge_utils = __webpack_require__("066b");
 
 
 
-//
-//
-//
-//
-//
-//
 
+
+//
+//
+//
+//
+//
+//
+//
 
 
  //var ShopifyToken;
@@ -10982,10 +10368,6 @@ var app_bridge_utils = __webpack_require__("066b");
 /* harmony default export */ var ShopifyTokenvue_type_script_lang_js_ = ({
   name: "ShopifyToken",
   props: {
-    sharedSecret: {
-      type: String,
-      default: "38aab48d0208f4ccd19aabbc413a2f18"
-    },
     apiKey: {
       type: String,
       default: "38aab48d0208f4ccd19aabbc413a2f18"
@@ -11001,7 +10383,10 @@ var app_bridge_utils = __webpack_require__("066b");
   },
   components: {
     svgLoader: function svgLoader() {
-      return __webpack_require__.e(/* import() */ 1).then(__webpack_require__.bind(null, "526b"));
+      return __webpack_require__.e(/* import() */ 3).then(__webpack_require__.bind(null, "526b"));
+    },
+    TestRequestshopify: function TestRequestshopify() {
+      return Promise.all(/* import() */[__webpack_require__.e(1), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, "6a1c"));
     }
   },
   data: function data() {
@@ -11009,7 +10394,7 @@ var app_bridge_utils = __webpack_require__("066b");
       query: query_string_default.a.parse(window.location.search),
       permissionUrl: "",
       title: "Chargement",
-      sessionToken: null
+      waiting: false
     };
   },
   mounted: function mounted() {
@@ -11024,67 +10409,48 @@ var app_bridge_utils = __webpack_require__("066b");
       var _this = this;
 
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-        var check, app, _app;
-
+        var check, app;
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                if (!(!_this.query.code && !_this.query.host)) {
-                  _context.next = 8;
-                  break;
+                _this.waiting = true;
+
+                // si cest deux paramettres sont presents, alors cest l'initialisation de l'app,
+                if (!_this.query.code && !_this.query.host) {
+                  console.log(" Initialisation de l'application ");
+                  _this.title = "Initialisation de l'application"; //On s'assure que cette requette provient de Shopify.( verification du hmac )
+
+                  check = true;
+                  console.log("status Initialisation : ", check);
+
+                  if (check) {
+                    /**
+                     * On redirige l'utilisateur vers l'approbation.
+                     */
+                    window.location.assign(_this.permissionUrl);
+                  }
+                } else if (_this.query.host && _this.query.code && window.top == window.self) {
+                  _this.title = "Validation des paramettres";
+                  check = true;
+                  app = new app_bridge_default.a({
+                    apiKey: _this.apiKey,
+                    host: _this.query.host,
+                    shopOrigin: _this.query.shop,
+                    forceRedirect: true
+                  });
+                  actions["Redirect"].create(app).dispatch(actions["Redirect"].Action.REMOTE, "/");
+                } else {
+                  _this.title = "L'application est prete à etre utiliser";
+                  _this.waiting = false;
+                  window.app = new app_bridge_default.a({
+                    apiKey: _this.apiKey,
+                    host: _this.query.host,
+                    shopOrigin: _this.query.shop
+                  });
                 }
 
-                console.log(" Initialisation de l'application ");
-                _this.title = "Initialisation de l'application"; //On s'assure que cette requette provient de Shopify.( verification du hmac )
-
-                check = true;
-                console.log("status Initialisation : ", check);
-
-                if (check) {
-                  /**
-                   * On redirige l'utilisateur vers l'approbation.
-                   */
-                  window.location.assign(_this.permissionUrl);
-                }
-
-                _context.next = 21;
-                break;
-
-              case 8:
-                if (!(_this.query.host && _this.query.code && window.top == window.self)) {
-                  _context.next = 15;
-                  break;
-                }
-
-                _this.title = "Validation des paramettres";
-                check = true;
-                app = new app_bridge_default.a({
-                  apiKey: _this.apiKey,
-                  host: _this.query.host,
-                  shopOrigin: _this.query.shop,
-                  forceRedirect: true
-                });
-                actions["Redirect"].create(app).dispatch(actions["Redirect"].Action.REMOTE, "/");
-                _context.next = 21;
-                break;
-
-              case 15:
-                _this.title = "L'application est prete à etre utiliser";
-                _app = new app_bridge_default.a({
-                  apiKey: _this.apiKey,
-                  host: _this.query.host,
-                  shopOrigin: _this.query.shop
-                });
-                _context.next = 19;
-                return Object(app_bridge_utils["getSessionToken"])(_app);
-
-              case 19:
-                _this.sessionToken = _context.sent;
-
-                _this.$emeit("ev_sessionToken", _this.sessionToken);
-
-              case 21:
+              case 2:
               case "end":
                 return _context.stop();
             }
@@ -11113,7 +10479,7 @@ var componentNormalizer = __webpack_require__("2877");
 
 var component = Object(componentNormalizer["a" /* default */])(
   src_ShopifyTokenvue_type_script_lang_js_,
-  ShopifyTokenvue_type_template_id_45445f3d_render,
+  ShopifyTokenvue_type_template_id_6ba8ffc3_render,
   staticRenderFns,
   false,
   null,
