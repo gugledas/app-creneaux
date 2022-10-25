@@ -9,7 +9,7 @@ module.exports = {
   //------------https://cli.vuejs.org/config--------------//
   //publicPath: "/",
   //outputDir: "dist",
-  assetsDir: envModeDev ? "" : "./",
+  // assetsDir: envModeDev ? "" : "./",
   //Pour desactiver la generation des fichiers avec des valeurs aleatoires.
   //filenameHashing: true,
   //pour construire une app avec plusieurs pages.
@@ -26,5 +26,8 @@ module.exports = {
       }
     }
     /**/
+  },
+  devServer: {
+    // host: "map-google-location.kksa",
   },
 };
